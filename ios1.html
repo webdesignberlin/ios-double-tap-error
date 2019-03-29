@@ -1,0 +1,95 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>11-12.2</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  
+  
+      <style>
+      *,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  background: coral;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  min-height: 100vh;
+    display: grid;
+    grid: 'header' 130px 'content' 1fr 'input' 120px 'footer' 65px / 100%;
+}
+
+.header {
+  grid-area: header;
+  background: black;
+  color: white;
+}
+
+.content {
+  grid-area: content;
+}
+
+.input {
+  grid-area: input;
+}
+
+.footer {
+  grid-area: footer;
+  background: black;
+  color: white;
+}
+    </style>
+
+  
+  
+  
+  
+
+</head>
+
+<body translate="no" >
+
+  <div class="container">
+ 
+  
+  <header class="header">
+    header
+  </header>
+  <div class="content">
+    <h1>Reproduce iOS Bug on Ipad 12.2 beta</h1>
+    <ol>
+      <li>Add Site to Homescreen</li>
+      <li>Double Tap on Body === Nothing happens (ok)</li>
+      <li>Fill Input and close keyboard</li>
+      <li>Double Tab on Body (area where the keyboard was previously open) === Moves html to top by the size of the keyboard</li>
+    </ol>
+  </div>
+ 
+
+  <div class="input">
+    <input type="text" placeholder="Fill here">
+  </div>
+  
+  <footer class="footer">
+    Footer
+  </footer>
+</div>
+  </body>
+
+</html>
+ 
